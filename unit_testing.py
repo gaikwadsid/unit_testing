@@ -57,4 +57,20 @@ class Testmax(unittest.TestCase):
         self.assertEqual(li.max(), 4)
 
 
+class Testremove(unittest.TestCase):
+    def test1(self):
+        li = ListManipulator([1, 2, 3, 4])
+        li.remove(2)
+        self.assertEqual(li.list, [1, 3, 4])
+
+    def test2(self):
+        li = ListManipulator([1, 2, 2, 4])
+        li.remove(2)
+        self.assertEqual(li.list, [1, 4])
+
+    def test2(self):
+        li = ListManipulator([1, 2, 3, 4])
+        li.remove(5)
+        self.assertEqual(li.list, [1, 2, 3, 4])
+
 
