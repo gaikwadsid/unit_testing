@@ -73,4 +73,5 @@ class Testremove(unittest.TestCase):
         li.remove(5)
         self.assertEqual(li.list, [1, 2, 3, 4])
 
+unittest.main()
 
